@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sam's Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--intro-->
+
+
+        <div class="container">
+            <div class="text-wrapper">
+                <div class="text-1 text">nah... i'd win</div>
+                <div class="text-2 text">nah... i'd win</div>
+                <div class="text-3 text">nah... i'd win</div>
+                <div class="text-4 text">nah... i'd win</div>
+                <div class="text-5 text">nah... i'd win</div>
+                <div class="text-6 text">nah... i'd win</div>
+                <div class="text-7 text">nah... i'd win</div>
+                <div class="text-8 text">nah... i'd win</div>
+                <div class="text-9 text">nah... i'd win</div>
+                <div class="text-10 text">nah... i'd win</div>
+                <div class="text-11 text">nah... i'd win</div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="site-info">
+                <div class="menuBar" onclick="myFunction(this); menu(); contactMenu(); projectsMenu(); aboutMeMenu(); sourcesMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="site-menu">
+              <div class="menu-item">
+                <div class="dropdown">
+                    <div onclick="dropDown()" class="dropbtn">Visibility</div>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Light Mode</a>
+                      <a href="#">Dark Mode</a>
+                      <a href="#">Color Blind</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                <div class="dropdown">
+                    <div onclick="toSources()" class="dropbtn">Sources</div>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">English</a>
+                      <a href="#">Spanish</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <!--website home page-->
+        <div class="homePage" style="display: none">
+        <div id="header">Vargas</div>
+
+
+        <img class="city" src="Screen Shot 2024-06-28 at 9.40.36 AM.png" style="margin-top: 375px; width: 100%;">
+        
+        <div class="aboutMeBox" style="text-transform: uppercase; margin-top: 0px; width: 80%; float: left;"> 
+            <h1>My Name is Sam Vargas... this is My Story</h1>
+        </div>
+        <div class="myStory" style="width: 50%; float: left;">
+        <div class="aboutMeBox" style="margin-top: 0px; width: 80%; float: left;"> 
+            <p>I was born a first generation immigrant: my father came from Peru. I grew up reading Marvel and DC comics, and the futuristic technology used by superheroes got me interested in ‘engineering’ and making things.</p>
+        </div>
+        <div class="aboutMeBox" style="margin-top: 50px; top: 50%; width: 80%; float: left;"> 
+            <p>I joined my middle school team’s VEX robotics club and learned about real robots for the first time. I became very good at building and designing the robot, and was also interested in the coding process. </p>
+        </div>
+        <div class="aboutMeBox" style="margin-top: 70px; top: 60%; width: 80%; float: left;"> 
+            <p>In highschool, I got exposed to a 'Makerspace', which had all the tools that I'd always wanted but never could have to make things. Throughout my early highschool years I made many fun projects with my friends. I later used the Makerspace to start my highschool's VEX robotics team, and got over 20 people to join the club.</p>
+        </div>
+        <div class="aboutMeBox" style="margin-top: 70px; top: 70%; width: 80%; float: left;"> 
+            <p>Around the same time, I started a non-profit organization called AV Designs with my friend. We both really enjoyed CAD and 3D designing, and we're asked to design and 3D print supplies that a non-profit organization needed. After many successful projects with them, we started our non-profit and began servicing other non-profits.</p>
+        </div>
+        <div class="aboutMeBox" style="margin-top: 70px; top: 50%; width: 80%; float: left;"> 
+            <p>Because of all the work I had been doing in the technology and engineering field, my Computer Science teacher asked me to apply for an internship called the Catapult Program. I applied in 2023 and got accepted, but due to conflicting times was not able to participate until the summer of 2024.</p>
+        </div>
+        </div>
+
+
+
+
+
+        <div class="timeline">
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            
+            <!--card flip-->
+            <div class = "timeline-component timeline-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class = "timeline-component timeline-content" src="IMG_1418.jpeg" width="90%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>2010</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class = "timeline-component timeline-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class = "timeline-component timeline-content" src="65497560985__FDF30B1B-2F93-4EC5-8940-62F343D0FEE8.jpeg" width="90%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>2015</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+  
+            <div class="timeline-empty">
+            </div>
+  
+            <div class="timeline-middle">
+                <div class="timeline-circle">
+                </div>
+            </div>
+            <div class = "timeline-component timeline-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class = "timeline-component timeline-content" src="IMG_1667.jpeg" width="90%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>2014</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class = "timeline-component timeline-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class = "timeline-component timeline-content" src="IMG_0054.jpeg" width="90%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>2019</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+
+           <div class="timeline-middle">
+               <div class="timeline-circle">
+               </div>
+           </div>
+           <div class = "timeline-component timeline-content">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class = "timeline-component timeline-content" src="IMG_3729.jpeg" width="90%">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>2021</h1>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class = "timeline-component timeline-content">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class = "timeline-component timeline-content" src="IMG_7976.jpeg" width="90%">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>2021</h1>
+                  </div>
+                </div>
+              </div>
+        </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>  
+            <div class="timeline-empty">
+                  </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle">
+                </div>
+            </div>
+            <div class = "timeline-component timeline-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class = "timeline-component timeline-content" src="image000003.jpeg" width="90%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>2023</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class = "timeline-component timeline-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class = "timeline-component timeline-content" src="IMG_4222.jpeg" width="90%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>2022</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-middle">
+                <div class="timeline-circle">
+                </div>
+            </div>
+            <div class = "timeline-component timeline-content">
+             <div class="flip-card">
+                 <div class="flip-card-inner">
+                   <div class="flip-card-front">
+                     <img class = "timeline-component timeline-content" src="IMG_0012.jpeg" width="90%">
+                   </div>
+                   <div class="flip-card-back">
+                     <h1>2023</h1>
+                   </div>
+                 </div>
+               </div>
+         </div>
+         <div class = "timeline-component timeline-content">
+             <div class="flip-card">
+                 <div class="flip-card-inner">
+                   <div class="flip-card-front">
+                     <img class = "timeline-component timeline-content" src="IMG_0866.jpeg" width="90%">
+                   </div>
+                   <div class="flip-card-back">
+                     <h1>2024</h1>
+                   </div>
+                 </div>
+               </div>
+         </div>
+             <div class="timeline-middle">
+                 <div class="timeline-circle"></div>
+             </div>
+             <div class="timeline-empty">
+             </div>  
+             <div class="timeline-empty">
+                   </div>
+
+            <div class="timeline-middle" >
+                <div class="timeline-middle" style="background-image: linear-gradient(45deg, white, white, black);">
+               </div>
+            </div> 
+        </div>
+
+
+           
+  
+        </div>
+
+        <div class="menuPage" style="display: none; margin-top: -5%;">
+            <p style="margin-left: 10%; transform: translateY(-53px);" class="menuLogo">Menu</p>
+            <hr class="menuLine"style="width: 20%; height: 3px; margin-left: 0%; transform: translateY(-60px); background-image: linear-gradient(45deg, white, black, black);">
+            <div class="buttons" style="transform: translateY(-110px);">
+                <div class="projects" onclick="myFunction(this); toProjects()" style="cursor: pointer;">
+                    <p style="font-size:400%;" class="diffPages">Projects</p>
+                </div>
+                <hr class="menu-divider" style="transform: translateY(-20px);">
+                <div class="aboutMe" onclick="myFunction(this); toAboutMe()" style="cursor: pointer;">
+                    <p class="diffPages"style="font-size:400%; margin-top: 10%;">About Me</p>
+                </div>
+                <hr class="menu-divider" style="transform: translateY(-10px);">
+                <div class="contact" onclick="myFunction(this); toContact()" style="cursor: pointer;">
+                    <!--this function should make the menu icon toggle when contact page is clicked, but isn't working-->
+                    <p class="diffPages"style="font-size:400%;">Contact Page</p>
+                </div>
+            </div>
+            <img class="cityscapee"src="https://i.pinimg.com/736x/b0/6d/f0/b06df07c60d1086fe785b06ef1483b3f.jpg" style="filter: grayscale(100%); float: right; margin-top: -50%; width: 33%; mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%); transform: translateY(-110px);">
+        </div>
+
+        <div class="contactPage" style="display: none">
+            <img class="otherSammy" style="float: left; margin-left: 5%; width:40%; filter: grayscale(100%);" src="Screen Shot 2024-07-03 at 12.34.45 AM.png">
+            <div class="contact-title" style="float: right; margin-right:10%;  font-size: 80px; font-family: Monument Extended;">Contact Me</div>
+            <!--border not showing up-->
+            <div style="border-color: black; border-width: 2px; border-radius: 5%; border-style: solid; width: 500px; height: 300px; float: right; margin-right: 2%;">
+        
+                <div contactBox style="float: left; margin-left: 8%; margin-top: 5%;">
+                    <div class="input" style="float: left">
+                        <input placeholder="Full Name" type="text" style="background-color:transparent; border-color: transparent; font-size: 20px;">
+                        <hr style="margin-top: 0%;">
+                        <br>
+                        <br>
+                        <input placeholder="E-mail" type="text" style="background-color:transparent; border-color: transparent; font-size: 20px;">
+                        <hr style="margin-top: 0%;">
+                        <br>
+                        <br>
+                        <input placeholder="Message" type="text" style="background-color:transparent; border-color: transparent; font-size: 20px;">
+                        <hr style="margin-top: 0%;">
+                    </div>
+                </div>
+        
+                <div class="contactInfo" style="float: right; margin-right: 3%; margin-top: 2%;">
+                    <div class="myInfo" style="font-family: Monument Extended">
+                        <p style="font-weight:550; transform: translateX(-30px);">My Email</p>
+                        <p style="font-size: 15px; transform: translateY(-20px);">sam06.vargas@gmail.com</p>
+                        <p style="font-weight: 550; transform: translateX(-30px);">Based In</p>
+                        <p style="font-size: 15px;  transform: translateY(-20px);">Indianapolis, IN</p>
+                    </div>
+                </div>
+        
+                <div class="contactBtn" style="border-radius: 25px; background: black; color: white; padding: 10px; margin-top: 5%; margin-left: 8%; float: left; font-size: 30px; width: 200px; height: 40px; text-align: center; transform: translateX(-30px); transform: translateY(-5px);">Contact Me</div>
+        
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <div class="icons" style="transform: translateX(20px);">
+                    <span class="fa-brands fa-instagram" style="float:right; font-size: 25px; transform: translateY(45px);"></span>
+                    <span class="fa-brands fa-linkedin" style="float:right; font-size: 25px; transform: translateX(65px); margin-top: 9%;"></span>
+                    <span class="fa-brands fa-github"  style="float:right; font-size: 25px; transform: translateX(-90px); margin-top: -5%;"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="projectsPage" style="display: none">
+            <h1 class="thingThatSaysProjects"style="margin-top: -2%; text-align: center; font-size: 35px; transform: translateY(-30px); height:30px;">Projects</h1>
+
+            <div class="media-scroller snaps-inline" style="width: 90%; margin-left: 4%;">
+                <a class="media-element" style= "width: 600px; margin-left:10%; height: 200px" href="https://githubsam0.github.io/Unit3ProjectFr/">
+                  <img src="https://media.mlive.com/movies_impact/photo/10531479-large.jpg" alt="">
+                  <p class="projectName" style="text-align: center; transform: translateY(-250px); font-size: 50px; width:600px; opacity: 0;">Rango: Choose Your Own Adventure</p>
+                </a>
+                <a class="media-element"  style= "width: 600px; margin-left:410px;" href="https://githubsam0.github.io/Unit4Project/?authuser=0">
+                  <img src="Screen Shot 2024-07-03 at 12.47.59 AM.png">
+                  <p class="projectName" style="text-align: center; transform: translateY(-250px); font-size: 50px; width:600px; opacity: 0;">Which Coding Teacher Are You? Quiz</p>
+                </a>
+                <a  style= "width: 600px; margin-left: 800px;"class="media-element" href="https://githubsam0.github.io/Displacement-in-Congo/">
+                  <img src="Screen Shot 2024-07-03 at 12.56.15 AM.png">
+                  <p class="projectName" style="text-align: center; transform: translateY(-250px); font-size: 50px; width:600px; opacity: 0;">Informative Website on Congo</p>
+                </a>
+                <a  style= "width: 600px; margin-left: 1190px;"class="media-element" href="">
+                  <img src="https://png.pngtree.com/template/20221207/ourmid/pngtree-coming-soon-banner-with-focus-lights-image_1917210.jpg" alt="">
+                  <p class="projectName"style="text-align: center; transform: translateY(-300px); font-size: 50px; width:600px; opacity: 0;">Website for AV Designs!</p>
+                </a>
+            </div>
+
+
+            <img class="onetwothree" src="Screen Shot 2024-07-03 at 1.03.47 AM.png" style="width: 100%; transform: translateY(-200px);">
+        </div>
+
+        <div class="aboutMePage" style="display: none">
+            <div class="topPage" style=" margin-top: 0%;">
+                <div class="aboutMeLogo" style="float: left; border-style: solid; width: 50%; border-radius: 25%; background-color: black; margin-left: 8%;">
+                    <h1 style="margin-left: 10%; font-size: 120px; color: white;">About</h1>
+                    <h1 style=" margin-left: 60%; font-size: 120px; color: white;">Me</h1>
+                </div>
+                <img class= "sammy"src="Screen Shot 2024-07-03 at 2.29.59 AM.png" style="filter: grayscale(100%); width: 35%; float: right;">
+            </div>
+        
+        
+            <img src="https://static.vecteezy.com/system/resources/previews/011/651/324/non_2x/newyork-city-highrise-skyline-simplicity-flat-design-free-png.png" style="float:right; filter: grayscale(100%); width: 100%; margin-top: 10%;">
+
+            <br>
+            <section class="bottomHalf" style="background: rgb(32, 32, 32); width: 100%; margin-top: 90%; height: 1000px">
+                <h1 class="aboutMeWords" style="color: white; margin-left: 8%; font-size: 80px;">Experience:</h1>
+                <div class="aboutMeWords" style="color: white; font-size: 30px; float: right; width: 40%; margin-right: 8%; margin-top: -15%;">
+                    <li>I am the president and co-founder of my schools's VEX robotics team.</li>
+                    <li>I box at Big Walk Boxing gym for 15 hours a week.</li> 
+                    <li>I have a small non-profit business with one other person called AV Designs. It's a 3D modeling business that works with other non-profits.</li>
+                    <li>I am currently in the process of co-founding an activism club for my school, as activism is one of the things I'm very passionate about.</li>
+                </div>
+
+                <h1 class="aboutMeWords" style="color: white; margin-left: 8%; font-size: 80px; margin-top: 30%;">Skills:</h1>
+                <div class="aboutMeWords" style="color: white; font-size: 30px; float: right; width: 40%; margin-right: 8%; margin-top: -10%;">
+                    <li>I have great leadership skills because of my experience in leadership roles.</li>
+                    <li>I'm a hard worker and very disciplined, which I learned from boxing.</li>
+                    <li>I'm creative and a good problem solver, and I perform well both academically and in my extracirriculars.</li>
+                    <li>I'm very ambitious and I dream big. I started AV Designs to begin trying to reach my goals early.</li>
+                </div>
+        
+                <div onclick = "toHome()" class="myStoryButton" style="color: white; border-color:black; border-style: solid; border-radius: 10%; background-color: black; border-width: 2px ; text-align: center; margin-top: 5%; font-size: 30px; width: 30%; float: left; padding:10px; margin-left: 8%;">
+                    <p class="erm">Learn more about My Story</p>
+                </div>
+            </section>
+            <!--
+            <div class="bottomHalf" style="background: rgb(32, 32, 32); width: 100%; margin-top: 50%;">
+                <h1 class="aboutMeWords" style="color: white; margin-left: 8%; font-size: 80px;">Experience:</h1>
+                <p class="aboutMeWords" style="color: white; font-size: 30px; float: right; width: 40%; margin-right: 8%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique rerum accusamus mollitia corporis, cum et error veritatis recusandae perferendis natus. Aperiam quisquam commodi dolore reprehenderit, architecto magnam fugiat veniam delectus.</p>
+
+                <h1 class="aboutMeWords" style="color: white; margin-left: 8%; font-size: 80px;">Skills:</h1>
+                <p class="aboutMeWords" style="color: white; font-size: 30px; float: right; width: 40%; margin-right: 8%;">I have great leadership skills.</p>
+        
+                <h1 class="aboutMeWords" style="color: white; margin-left: 3%; font-size: 80px;">Aspirations:</h1>
+                <p class="aboutMeWords" style="color: white; font-size: 30px; float: right; width: 40%; margin-right: 8%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique rerum accusamus mollitia corporis, cum et error veritatis recusandae perferendis natus. Aperiam quisquam commodi dolore reprehenderit, architecto magnam fugiat veniam delectus.</p>
+        
+                <div class="myStoryButton" style="color: white; border-color:black; border-style: solid; border-radius: 10%; background-color: black; border-width: 2px ; text-align: center; margin-top: 5%; font-size: 30px; width: 30%; float: left; padding:10px; margin-left: 35%;  margin-bottom: 10%;">
+                    <p class="erm">Learn more about My Story</p>
+                </div>
+            </div>
+        -->
+        </div>
+
+        <div class ="sourcesPage" style="display: none">
+            <h1>“Learn CSS Animations In 20 Minutes - For Beginners” - Youtube video that taught me <br> CSS animations that I used for scroll animations and hover animations</h1>
+            <h1>“Intro Text Animation Using Pure CSS (Website Intro Animation)” - Youtube video that I used for intro animation</h1>
+            <h1>https://codepen.io/lemmin/pen/xRyXMZ - CodePen Sideways Scrolling Animation - Used for projects page</h1>
+        </div>
+
+    </body>
+</html>

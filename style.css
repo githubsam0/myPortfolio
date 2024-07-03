@@ -1,0 +1,640 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Monument Extended";
+}
+
+#header {
+
+    position: absolute;
+    font-family: "Monument Extended";
+    text-transform: uppercase;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    animation: slide-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
+    animation-fill-mode: forwards;
+}
+
+.text-wrapper {
+    color: white;
+    position: absolute;
+}
+
+.text {
+    font-family: "Monument Extended";
+    font-weight: lighter;
+    font-size: 54px;
+}
+
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-7,
+.text-8,
+.text-9,
+.text-10,
+.text-11 {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0%;
+    }
+    1% {
+        opacity: 100%;
+    }
+    99% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.text-1 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+.text-2 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-3 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-4 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-5 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-6 {
+    animation: blink 0.8s linear 0.4s, blink 0.8s linear 2.5s, slide-out 1s linear 3.2s;
+    opacity: 0;
+}
+
+.text-7 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-8 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-9 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-10 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-11 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 0%;
+    }
+    1% {
+        opacity: 100%;
+    }
+
+    19% {
+        opacity: 100%;
+    }
+    20% {
+        opacity: 0%;
+    }
+
+    39% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+
+    59% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+
+    79% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-out-container {
+    0% {
+        height: 100vh;
+    }
+
+    40% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+@media (max-width: 990px) {
+    #header {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0%;
+        transform: translateY(-30px) scale(0.9);
+    }
+    50% {
+        opacity: 0%;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes fade-up {
+    0% {
+        opacity: 0%;
+        transform: translateY(30px) scale(0.9);
+    }
+    50% {
+        opacity: 0%;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.navbar {
+    width: 90%;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Monument Extended";
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 100px;
+    z-index:-1;
+    animation: fade-down 3s;
+    animation-delay: 4.7s;
+}
+.site-menu {
+    display: flex;
+}
+.menu-item{
+    position: relative;
+    height: 50%;
+    line-height: 300%;
+    margin-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    font-family: "Monument Extended";
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display:block;
+}
+
+
+
+
+.menu-item {
+    margin-left: 60px;
+}
+
+.city{
+    animation: fade-up 1.8s;
+    animation-delay: 0.6s;
+}
+
+.menuBar {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10%;
+  }
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+/* main page */
+
+  /* tempIndex stying */
+.aboutMeBox{
+    text-align: center;
+    color: black;
+    margin: 50px;
+    padding: 10px;
+}
+
+p{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+/* timeline */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 50%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.timeline-content {
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, black, black, black);
+    width: 3px;
+    height: 200px;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, black, black, black);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.aboutMeBox, .aboutMeWords, .myStoryButton{
+    animation: fade-down ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+    animation-duration: 1s;
+}
+.timeline-content{
+    animation: fade-in ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+    animation-duration: 1s;
+}
+
+/* card flip animation */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: black;
+    transform: rotateY(180deg);
+}
+
+
+
+/*contact page */
+
+.otherSammy, .contact-title{
+    animation: fade-in 0.5s ease-in-out;
+}
+
+
+
+
+/* menu page */
+.projects{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.aboutMe, .contact{
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.menu-divider{
+    background-image: linear-gradient(45deg, white, black, white);
+    height: 2px;
+    width: 50%;
+    float: left;
+}
+.menuLine, .menu-divider{
+    animation: fade-in 0.5s ease-in-out;
+}
+.projects{
+    animation: fade-up 2s;
+}
+.aboutMe{
+    animation: fade-up 2.5s;
+}
+.contact{
+    animation: fade-up 3s;
+}
+.cityscapee{
+    animation: fadeInRight 1s ease-in-out;
+}
+.menuLogo{
+    animation: fade-in 0.5s;
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0.1;
+      transform: translateX(1px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.diffPages:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+/* projects page */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+
+.media-group {
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media-element:hover{
+    transform: translateY(-10px);
+}
+.projectContainer:hover .projectName{
+    opacity: 1;
+}
+
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+
+.media-element{
+    animation: fade-in 2s ease-in-out;
+}
+.thingThatSaysProjects{
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.onetwothree{
+    animation: fade-in 1s ease-in-out;
+}
+
+
+
+/* general styling */
+
+.projContainer {
+    inline-size: min(110% - 4rem, 70rem);
+    margin-inline: auto;
+}
+  
+.flow {
+    display: grid;
+    gap: var(--size-3);
+}
+  
+.section-title {
+    padding-inline-start: var(--size-6);
+    margin-block: var(--size-9) var(--size-3);
+}
+
+/*about me page */
+.aboutMeLogo:hover {
+    background-color: white;
+    color: black;
+}
+.aboutMeLogo{
+    animation: fade-down 0.5s ease-in-out;
+}
+.sammy{
+    animation: fade-up 0.5s ease-in-out;
+}
+
+.myStoryButton, .diffPages, .media-element{
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.myStoryButton:hover{
+    transform: translateY(-10px);
+    background-color: white;
+    color: black;
+}
+
